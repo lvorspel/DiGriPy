@@ -1,0 +1,4 @@
+p_pump_low,p_pump_high,t_source_upper_limit,t_source_lower_limit,t_consumer_return_high,t_consumer_return_low,end_high_t,begin_low_t,min_consumer_demand,pr_at_largest_consumer,simulate_couplings,insulation_level,pipe_type,lambda_ins,lambda_soil,depth,dist,active,t_amb,name
+4,4,45,30,30,20,75,50,10,0.6,0,2,KMR,0.03,1.2,0.6,0.2,1,10,No2
+4,4,45,30,30,20,75,50,10,0.6,0,1,KMR,0.03,1.2,0.6,0.2,1,10,No1
+4,4,45,30,30,20,75,50,10,0.6,0,3,KMR,0.03,1.2,0.6,0.2,1,10,No3
