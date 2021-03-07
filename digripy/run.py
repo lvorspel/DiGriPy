@@ -16,7 +16,7 @@ from digripy.simulation import Simulation
 
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--input_dir", required=True, type=str,
-                default='../example40C',	help="Directory with input files")
+                help="Directory with input files")
 ap.add_argument("-nm", "--no_mp", required=False, type=bool, default=False,
                 help="Disable multi-processing")
 ap.add_argument("-nc", "--no_cuda", required=False, type=bool, default=False,
@@ -69,8 +69,8 @@ if __name__ == '__main__':
     result_file_prefix = f'{datetime.datetime.now().strftime("%H-%M-%S")}_' \
                          f'{project_name}'
 
-    output_dir = f'{Path.home()}/digripy-results/' \
-                 f'{datetime.date.today().isoformat()}/'
+    output_dir = os.path.join(Path.home(), 'digripy-results',
+                              datetime.date.today().isoformat())
     os.makedirs(output_dir, exist_ok=True)
 
     log_file = f'{result_file_prefix}.log'
