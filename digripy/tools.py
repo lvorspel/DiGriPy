@@ -17,7 +17,7 @@ from tespy.tools.logger import logging
 
 
 def calc_pipe_attrs(dn_size: int, length: float, sim_settings, in_dir,
-                    pipe_definitions_file="pipe_definitions.json"):
+                    pipe_definitions_file=None):
     """
     Calculates district heating pipe parameters according to standard
     definitions given in res/pipe_definitions.json.
@@ -72,6 +72,11 @@ def calc_pipe_attrs(dn_size: int, length: float, sim_settings, in_dir,
     dist = sim_settings['dist']
     ins_level = sim_settings['insulation_level']
     pipe_type = sim_settings['pipe_type']
+    # If no pipe definition file is given use the builtin one
+    if pipe_definitions_file is None:
+        digripy_path = os.path.split(__file__)[0]
+        pipe_definitions_file = os.path.join(digripy_path,
+                                             "pipe_definitions.json")
 
     user_pipe_def = os.path.join(in_dir, pipe_definitions_file)
     if os.path.isfile(user_pipe_def):
