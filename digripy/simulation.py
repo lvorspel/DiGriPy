@@ -4,7 +4,6 @@ import datetime
 import logging
 import multiprocessing as mp
 import os
-import openpyxl
 
 import numpy as np
 import pandas as pd
