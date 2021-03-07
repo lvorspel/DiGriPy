@@ -11,7 +11,7 @@ python3 -m pip install DiGriPy
 ## Running
 For Running DiGriPy you can simply download the `tests` folder provided in the [git repository](https://github.com/lvorspel/DiGriPy) and run 
 ```
-python3 -m digripy.run -i tests/example80C -l 20 -nm True
+python3 -m digripy.run -i tests/example80C -l 20
 ```
 
 in a command line. This will run the first 20 time steps of the medium temperature scenario and display the results in a browser. 

@@ -17,7 +17,7 @@ from digripy.simulation import Simulation
 ap = argparse.ArgumentParser()
 ap.add_argument("-i", "--input_dir", required=True, type=str,
                 help="Directory with input files")
-ap.add_argument("-nm", "--no_mp", required=False, type=bool, default=False,
+ap.add_argument("-nm", "--no_mp", required=False, type=bool, default=True,
                 help="Disable multi-processing")
 ap.add_argument("-nc", "--no_cuda", required=False, type=bool, default=False,
                 help="Disable CUDA")
