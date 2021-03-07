@@ -4,8 +4,7 @@ District Heat Grid Simulation in Python
 ## Installation
 For installation, you can clone this repository and use pip for solving dependencies and installation: 
 ```
-git clone https://github.com/lvorspel/DiGriPy.git
-python3 -m pip install DiGriPy
+python3 -m pip install git+https://github.com/lvorspel/DiGriPy.git
 ```
 
 ## Running
