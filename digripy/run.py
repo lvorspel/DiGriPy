@@ -15,7 +15,7 @@ from digripy import tools
 from digripy.simulation import Simulation
 
 ap = argparse.ArgumentParser()
-ap.add_argument("-d", "--input_dir", required=False, type=str,
+ap.add_argument("-i", "--input_dir", required=True, type=str,
                 default='../example40C',	help="Directory with input files")
 ap.add_argument("-nm", "--no_mp", required=False, type=bool, default=False,
                 help="Disable multi-processing")
