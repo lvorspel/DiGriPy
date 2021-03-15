@@ -1,5 +1,5 @@
 # DiGriPy
-District Heat Grid Simulation in Python
+District Heating Grid Simulation in Python
 
 ## Installation
 For installation, you can clone this repository and use pip for solving dependencies and installation: 
