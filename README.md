@@ -2,15 +2,22 @@
 District Heating Grid Simulation in Python
 
 ## Installation
-For installation, you can clone this repository and use pip for solving dependencies and installation: 
+For installation, you can clone this repository and use pip for solving dependencies and installation.
+Please use Python3 <3.9, as CoolProp fails to install on Python 3.9.
 ```
-python3 -m pip install git+https://github.com/lvorspel/DiGriPy.git
+python -m pip install git+https://github.com/lvorspel/DiGriPy.git
 ```
+
+You can alternatively manually clone this repo and then
+```
+python setup.py install
+```
+in the cloned directory.
 
 ## Running
 For Running DiGriPy you can simply download the `tests` folder provided in the [git repository](https://github.com/lvorspel/DiGriPy) and run 
 ```
-python3 -m digripy.run -i tests/example80C -l 20
+python -m digripy.run -i tests/example80C -l 20
 ```
 
 in a command line. This will run the first 20 time steps of the medium temperature scenario and display the results in a browser. 
