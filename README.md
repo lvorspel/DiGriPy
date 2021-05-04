@@ -5,7 +5,7 @@ District Heating Grid Simulation in Python
 For installation, you can clone this repository and use pip for solving dependencies and installation.
 Please use Python3 <3.9, as CoolProp fails to install on Python 3.9.
 ```
-python -m pip install git+https://github.com/lvorspel/DiGriPy.git
+python -m pip install digripy
 ```
 
 You can alternatively manually clone this repo and then
